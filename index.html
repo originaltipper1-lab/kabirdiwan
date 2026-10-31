@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090e">
+  <meta name="description" content="Kabir Deewan — Cricket Analyst & Toss-Match King. Join the Telegram channel for daily cricket reports.">
+  <title>KABIR DEEWAN - King Of Cricket Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold-primary:#FFD700;--gold-glow:#FFA500;--tg-blue:#0088cc;--dark-bg:#07090e;--card-bg:rgba(18,24,38,.75);--border-glow:rgba(255,215,0,.25)}
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    body{background:var(--dark-bg);color:#fff;font-family:'Poppins',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;overflow-x:hidden;position:relative}
+    body::before{content:'';position:fixed;top:-20%;left:50%;transform:translateX(-50%);width:380px;height:380px;background:radial-gradient(circle,rgba(255,170,0,.2) 0%,rgba(0,136,204,.1) 60%,transparent 80%);z-index:0;filter:blur(40px);pointer-events:none}
+    .mobile-container{width:100%;max-width:420px;min-height:100vh;min-height:100svh;padding:24px 18px 40px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;position:relative;z-index:1}
+    .top-badge{background:linear-gradient(90deg,rgba(255,215,0,.1),rgba(255,165,0,.2));border:1px solid var(--border-glow);padding:5px 14px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:1px;color:var(--gold-primary);text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:12px}
+    .live-dot{width:8px;height:8px;background:#00ff66;border-radius:50%;box-shadow:0 0 8px #00ff66;animation:pulse 1.4s infinite;flex-shrink:0}
+    .profile-wrapper{position:relative;width:124px;height:124px;flex-shrink:0;margin-bottom:12px}
+    .profile-glow-ring{position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(from 180deg,var(--gold-primary),#00ffaa,var(--tg-blue),var(--gold-primary));animation:spinRing 4s linear infinite}
+    .profile-img-box{position:relative;width:100%;height:100%;border-radius:50%;background:#0d131f;overflow:hidden;border:3px solid #07090e;display:flex;align-items:center;justify-content:center}
+    .profile-img-box svg{width:85%;height:85%}
+    .verified-badge{position:absolute;bottom:4px;right:4px;background:#0088cc;width:26px;height:26px;border-radius:50%;border:2px solid #07090e;display:flex;align-items:center;justify-content:center;box-shadow:0 0 10px rgba(0,136,204,.8)}
+    .title-block{text-align:center;margin-bottom:18px}
+    .channel-name{font-family:'Teko',sans-serif;font-size:2.7rem;line-height:1;letter-spacing:2px;background:linear-gradient(180deg,#fff 20%,#FFD700 80%);background-clip:text;-webkit-background-clip:text;color:transparent;text-transform:uppercase}
+    .channel-tag{color:#9cb3c9;font-size:.82rem;font-weight:600;letter-spacing:.5px;margin-top:2px}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%;margin-bottom:22px}
+    .stat-card{background:var(--card-bg);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 4px;text-align:center;backdrop-filter:blur(8px)}
+    .stat-num{font-family:'Teko',sans-serif;font-size:1.5rem;line-height:1;color:var(--gold-primary)}
+    .stat-lbl{font-size:.65rem;color:#8fa2b8;font-weight:600;text-transform:uppercase}
+    .highlight-card{width:100%;background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(0,136,204,.08));border:1px solid var(--border-glow);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:12px;margin-bottom:22px}
+    .highlight-icon{font-size:1.6rem;line-height:1}
+    .highlight-text h2{font-size:.85rem;font-weight:700;color:#fff}
+    .highlight-text p{font-size:.72rem;color:#a4b7ca}
+    .cta-section{width:100%;display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:18px}
+    .telegram-btn{position:relative;width:100%;min-height:62px;padding:12px 8px;border-radius:16px;background:linear-gradient(135deg,#FFD700 0%,#FF9900 100%);display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;color:#07090e;font-weight:800;font-size:1.15rem;letter-spacing:.5px;box-shadow:0 0 35px rgba(255,170,0,.55),inset 0 2px 4px rgba(255,255,255,.6);transition:transform .2s,box-shadow .2s;animation:pulseCTA 2s infinite}
+    .telegram-btn:hover{transform:translateY(-2px)}
+    .telegram-btn:active{transform:scale(.97)}
+    .telegram-btn:focus-visible{outline:3px solid #fff;outline-offset:5px}
+    .telegram-icon{width:28px;height:28px;fill:#07090e;flex-shrink:0}
+    .redirect-wrapper{width:100%;background:rgba(14,20,31,.85);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 14px;text-align:center}
+    .timer-heading{font-size:.75rem;color:#a4b7ca;margin-bottom:6px}
+    .timer-highlight{color:var(--gold-primary);font-weight:700;font-size:.9rem}
+    .progress-bar-bg{width:100%;height:5px;background:rgba(255,255,255,.1);border-radius:10px;overflow:hidden}
+    .progress-bar-fill{width:100%;height:100%;background:linear-gradient(90deg,#0088cc,#FFD700);border-radius:10px;transform-origin:left;transition:transform 1s linear}
+    .footer-note{text-align:center;font-size:.68rem;color:#8295ac;margin-top:10px}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}
+    @keyframes spinRing{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes pulseCTA{0%,100%{box-shadow:0 0 20px rgba(255,170,0,.4)}50%{box-shadow:0 0 40px rgba(255,170,0,.85)}}
+    @media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}
+    @media(max-width:350px){.telegram-btn{font-size:.98rem;gap:8px}.top-badge{font-size:.65rem}}
+  </style>
+</head>
+<body>
+  <main class="mobile-container">
+    <div class="top-badge"><span class="live-dot" aria-hidden="true"></span><span>IPL & T20 LIVE PREDICTOR</span></div>
+    <div class="profile-wrapper">
+      <div class="profile-glow-ring" aria-hidden="true"></div>
+      <div class="profile-img-box">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir royal cricket badge">
+          <circle cx="50" cy="50" r="48" fill="#0d1424"/>
+          <path d="M28 42L36 58H64L72 42L58 48L50 32L42 48L28 42Z" fill="#FFD700"/>
+          <circle cx="50" cy="29" r="3" fill="#FFF"/><circle cx="28" cy="40" r="2.5" fill="#FFF"/><circle cx="72" cy="40" r="2.5" fill="#FFF"/>
+          <path d="M38 66L45 59L50 64L43 71Z" fill="#FFA500"/><path d="M62 66L55 59L50 64L57 71Z" fill="#FFA500"/>
+          <text x="50" y="86" text-anchor="middle" font-family="Teko, sans-serif" font-size="20" font-weight="700" fill="#FFF" letter-spacing="2">KABIR</text>
+        </svg>
+      </div>
+      <div class="verified-badge" aria-label="Verified badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
+    </div>
+    <div class="title-block"><h1 class="channel-name">KABIR DEEWAN</h1><p class="channel-tag">Cricket Analyst & Toss-Match King 🏏</p></div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">98.4%</div><div class="stat-lbl">Accuracy</div></div>
+      <div class="stat-card"><div class="stat-num">50K+</div><div class="stat-lbl">Subscribers</div></div>
+      <div class="stat-card"><div class="stat-num">FREE</div><div class="stat-lbl">Open Reports</div></div>
+    </div>
+    <div class="highlight-card"><span class="highlight-icon" aria-hidden="true">🔥</span><div class="highlight-text"><h2>Aaj Ka Match & Jackpot Pass</h2><p>100% Sure Shot Session, Toss aur Match Entry report live hai!</p></div></div>
+    <div class="cta-section">
+      <a href="https://t.me/+IVB3mHbq9M5jOTVk" id="tgBtn" class="telegram-btn" target="_blank" rel="noopener noreferrer">
+        <svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+        JOIN TELEGRAM NOW
+      </a>
+      <div class="redirect-wrapper" id="redirectWrapper">
+        <div class="timer-heading">Telegram par auto-redirect ho rahe hain: <span class="timer-highlight" id="timerCount">10s</span></div>
+        <div class="progress-bar-bg" role="progressbar" aria-label="Time until Telegram redirect" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10" id="redirectProgress"><div class="progress-bar-fill" id="progressFill"></div></div>
+      </div>
+      <noscript><style>#redirectWrapper{display:none}</style><p>Telegram join karne ke liye upar button dabayein.</p></noscript>
+    </div>
+    <div class="footer-note">⚡ 100% Genuine Cricket Tips | Daily Free Sessions | Non-Stop Winnings</div>
+  </main>
+  <script>
+    const TELEGRAM_URL = 'https://t.me/+IVB3mHbq9M5jOTVk';
+    const totalSeconds = 10;
+    let remainingSeconds = totalSeconds;
+    const timerElement = document.getElementById('timerCount');
+    const progressElement = document.getElementById('progressFill');
+    const progressBar = document.getElementById('redirectProgress');
+    const countdown = setInterval(() => {
+      remainingSeconds--;
+      timerElement.textContent = remainingSeconds + 's';
+      progressElement.style.transform = 'scaleX(' + remainingSeconds / totalSeconds + ')';
+      progressBar.setAttribute('aria-valuenow', remainingSeconds);
+      if (remainingSeconds <= 0) {
+        clearInterval(countdown);
+        window.location.href = TELEGRAM_URL;
+      }
+    }, 1000);
+    document.getElementById('tgBtn').addEventListener('click', () => {
+      clearInterval(countdown);
+      timerElement.textContent = 'Telegram opening…';
+    });
+  </script>
+</body>
+</html>
